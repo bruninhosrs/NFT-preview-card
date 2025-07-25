@@ -1,0 +1,165 @@
+:root {
+  --color-blue-500: #8bacdaff;
+  --color-cyan-400: #00fff7ff;
+  --color-blue-950: #0d192bff; /* main background */
+  --color-blue-900: #14253dff; /* card background */
+  --color-blue-800: #2f415bff; /* line/divider */
+  --color-white: #ffffffff;
+  --tamanho-fonte-padrao: 18px;
+  --fonte: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  color: var(--color-blue-500);
+  /* align-items: center; */
+  /* font-weight: bold; */
+}
+
+body {
+  font-size: var(--tamanho-fonte-padrao);
+  font-family: var(--fonte);
+  background-color: var(--color-blue-950);
+  font-size: var(--tamanho-fonte-padrao);
+  font-family: var(--fonte);
+  color: var(--color-white);
+  /* height: 100vh; */
+}
+
+#container {
+  background-color: var(--color-blue-900);
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  margin: 150px auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image-cub {
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nft-image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-cyan-400);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* .image-cub,
+.image-cub img {
+  width: 100%;
+}
+
+.image-cub img {
+  border-radius: 10px;
+  display: block;
+} */
+
+/* "CABEALHO" */
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+#title {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  font-size: var(--tamanho-fonte-padrao);
+  transition: 0.5s;
+}
+
+#description {
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+  color: var(--color-blue-500);
+}
+/* FIM "CABEALHO" */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.eth,
+.time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eth img,
+.time img {
+  /* width: 12px; */
+  /* height: 12px; */
+  display: block;
+}
+
+.eth p {
+  color: var(--color-cyan-400);
+}
+
+.time p {
+  color: var(--color-blue-500);
+}
+
+.linha {
+  border: 1px solid var(--color-blue-800);
+}
+
+.bio {
+  display: flex;
+  margin-top: 15px;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bio img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+}
+
+.creator a {
+  color: var(--color-blue-500);
+  transition: color 0.5s ease;
+  cursor: pointer;
+}
+
+/* hover */
+.image-cub:hover .overlay {
+  opacity: 1;
+}
+
+#title:hover {
+  color: var(--color-cyan-400);
+}
+
+.creator a:hover {
+  color: var(--color-cyan-400);
+}
